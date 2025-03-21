@@ -1,0 +1,291 @@
+[
+  {
+    "ContainingType": "APIsRest.Controllers.AccesoController",
+    "Method": "GetAccesos",
+    "RelativePath": "api/user/{UsersId}/Acceso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[APIsRest.Models.Accesos, APIsRest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.AccesoController",
+    "Method": "PostAcceso",
+    "RelativePath": "api/user/{UsersId}/Acceso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accesoinsert",
+        "Type": "APIsRest.Models.AccesoInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Accesos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.AccesoController",
+    "Method": "DeleteAccesso",
+    "RelativePath": "api/user/{UsersId}/Acceso",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "AccesoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Accesos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.AccesoController",
+    "Method": "GetAcceso",
+    "RelativePath": "api/user/{UsersId}/Acceso/{AccesoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "AccesosId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "AccesoId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Accesos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.AccesoController",
+    "Method": "PutAccesso",
+    "RelativePath": "api/user/{UsersId}/Acceso/{AccesoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "AccesoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accesoInsert",
+        "Type": "APIsRest.Models.AccesoInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Accesos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.UsersController",
+    "Method": "GetUsuarios",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[APIsRest.Models.Users, APIsRest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.UsersController",
+    "Method": "PostUser",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userInsert",
+        "Type": "APIsRest.Models.UserInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.UsersController",
+    "Method": "GetUser",
+    "RelativePath": "api/Users/{UsersId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.UsersController",
+    "Method": "PutUsers",
+    "RelativePath": "api/Users/{UsersId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userInsert",
+        "Type": "APIsRest.Models.UserInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIsRest.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Users/{UsersId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsersId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIsRest.Models.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
